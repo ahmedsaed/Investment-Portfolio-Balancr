@@ -38,6 +38,7 @@ jobs:
     - name: Build Android APK
       run: |
         npx react-native build-android --mode=release # Or adjust build command as needed
+        ls -R android/app/build/outputs/apk/
 
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
