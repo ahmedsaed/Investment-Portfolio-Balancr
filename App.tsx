@@ -5,7 +5,7 @@
  * @format
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
+import DashboardScreen from './src/screens/DashboardScreen';
 import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
 import {
   SafeAreaProvider,
@@ -31,10 +31,7 @@ function AppContent() {
 
   return (
     <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
+      <DashboardScreen />
     </View>
   );
 }
